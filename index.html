@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="/app/style/style.css">
+  <title>Roshni</title>
+</head>
+<body>
+  <section>
+  <header>
+   <a href="#"><img src="images/rsz_logooshni.png" class="logo"></a>
+   <div class="toggle" onclick="toggleMenu();"></div>
+   <ul class="navigation">
+     <li><a href="#home">Home</a></li>
+     <li><a href="#product">Products</a></li>
+     <li><a href="#location">Location</a></li>
+     <li><a href="#contractUS">Contract Us</a></li>
+   </ul>
+  
+  </header>
+  <div class="content" id="home">
+    <div class="textBox">
+      <h2>Welcome To our <br>Store <span>Roshni Electronics</span></h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, facilis! Iusto at sit mollitia delectus!</p>
+      <a href="#">About Us</a>
+    </div>
+    <div class="imgBox">
+      <img src="/images/bg-intro-desktop-svg (1).svg" class="Products" alt="">
+    </div>
+  </div>
+</section>
+<h2 class="product"><strong>Our Products</strong></h2>
+<section class="product_section" id="product">
+  <div>
+    <div>
+      
+        
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card  h-100 shadow product-card casual-card">
+                <img src="images/electrical-wires-500x500.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> <strong>wires</strong> </h5>
+                  <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, consequuntur!</p>
+                </div>
+                <div class="card-footer product-card-footer d-flex justify-content-between">
+                  <h3><span class="orange-highlight">More info</span></h3>
+                  <button class=" btn btn-primary "><i class="fa fa-shopping-cart"></i><a href="#contractUS">Contract us</a></button>
+                    
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 shadow product-card casual-card">
+                <img src="images/Figure-1-Sensors-group-Final.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> <strong>Sensors</strong></h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, minus!</p>
+                </div>
+                <div class="card-footer product-card-footer d-flex justify-content-between">
+                  <h3><span class="orange-highlight">More info</span></h3>
+                  <button class=" btn btn-primary "><i class="fa fa-shopping-cart"></i>Contract us</button>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card  h-100 shadow product-card casual-card">
+                <img src="images/giant_123371.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title"> <strong>Ceiling Fans</strong> </h5>
+                  <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, quidem!</p>
+                </div>
+                <div class="card-footer product-card-footer d-flex justify-content-between ">
+                    <h3><span class="orange-highlight">More info</span></h3>
+                    <button class=" btn btn-primary "><i class="fa fa-shopping-cart"></i>Contract us</button>
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+     
+    </div>
+  </div>
+</section>
+<h2 class="product location"><strong>Our Location</strong></h2> 
+<section id="location">
+  <div>
+    
+</div>
+<div class="mapouter">
+  <div class="gmap_canvas">
+    <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=roshni%20electric,kushtia&t=k&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+    </iframe><a href="https://www.whatismyip-address.com"></a><br>
+    <style>.mapouter{position:relative;text-align:right;height:500px;width:100%;}</style>
+    <a href="https://www.embedgooglemap.net">google maps iframe options</a>
+    <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}</style>
+  </div>
+</div>
+</section>
+<h2 class="product location"><strong>Contract Us</strong></h2> 
+<div class="container contact-form" id="contractUS">
+  <div class="contact-image">
+      <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
+  </div>
+<form method="post" id="frmSubmit">
+  <h3>Drop Us a Message</h3>
+ <div class="row">
+      <div class="col-md-6">
+          <div class="form-group">
+              <input type="text" name="Name" class="form-control" placeholder="Your Name *" value="" />
+          </div>
+          <div class="form-group">
+              <input type="text" name="Email" class="form-control" placeholder="Your Email *" value="" />
+          </div>
+          <div class="form-group">
+              <input type="text" name="Phone" class="form-control" placeholder="Your Phone Number *" value="" />
+          </div>
+          
+      </div>
+      <div class="col-md-6">
+          <div class="form-group">
+              <textarea name="Message" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;"></textarea>
+          </div>
+      </div>
+      <div class="form-group">
+        <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+    </div>
+  </div>
+</form>
+</div>
+</body>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  function toggleMenu(){
+    var menuToggle = document.querySelector('.toggle');
+    var navigation = document.querySelector('.navigation')
+    menuToggle.classList.toggle('active');
+    navigation.classList.toggle('active');
+    
+  }
+  jquery('#frmSubmit').on('submit', function(e){
+    e.preventDefault();
+    jquery.ajax({
+      url:'https://script.google.com/macros/s/AKfycbzoKhX5a0Iu-UQ4oTiSAyqArMdu1JlJdlLz3SC69Km8bmlPpSKAJWK6ncTzJnXAhKs/exec',
+      type:'POST',
+      data:jquery('#frmSubmit').serialize,
+      success:function(result){
+        console.log(result);
+      }
+    });
+
+  });
+</script>
+</html>

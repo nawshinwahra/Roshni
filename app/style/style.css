@@ -1,0 +1,262 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&family=Poppins:wght@300;400&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+
+}
+header ul {
+    position: relative;
+    display: flex;
+}
+header ul li {
+    list-style: none;
+}
+header ul li a {
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBox{
+ position: relative;
+ max-width: 600px;
+}
+
+.content .textBox h2{
+    color:#333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.content .textBox h2 span{
+    color:#017143;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.content .textBox p{
+    color:#333;
+}
+.content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding:8px 20px;
+    background: hsl(233, 26%, 24%);
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+}
+
+.content .imgBox{
+    width:600px;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+.content .imgBox img{
+    max-width: 650px;
+}
+.product{
+    text-align: center;
+    font-size: 3em;
+    font-weight:500;
+}
+.product_section{
+    background: hsl(136, 65%, 51%);
+}
+.product-card{
+    border: 0;
+    border-radius: 5px;
+}
+.casual-card img{
+    background-color:hsl(136, 65%, 51%);
+}
+.product-card img{
+    
+    border-radius: 15px;
+    border: 10px solid hsl(232, 13%, 53%);
+    max-height: 400px;
+}
+.product-card-footer{
+    background-color:hsl(233, 26%, 24%);
+    border: 0;
+}
+.orange-highlight{
+    color: orange;
+}
+.location{
+    padding: auto;
+    margin-bottom: 0%;
+}
+#location {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+/* form */
+.contact-form{
+    background: hsl(136, 65%, 51%);
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 70%;
+}
+.contact-form .form-control{
+    border-radius:1rem;
+}
+.contact-image{
+    text-align: center;
+}
+.contact-image img{
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+}
+.contact-form form{
+    padding: 14%;
+}
+.contact-form form .row{
+    margin-bottom: -7%;
+}
+.contact-form h3{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #017143;;
+}
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: hsl(233, 26%, 24%);
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+}
+@media(max-width:991px){
+    header{
+        padding:20px
+    }
+    header .logo{
+        max-width: 60px;
+    }
+    header ul {
+        display: none;
+    }
+    .toggle{
+        position: relative;
+        width:30px;
+        height: 30px;
+        cursor: pointer;
+        background:url(/images/Hamburger_icon.svg);
+        background-size: 30px;
+        background-position:center;
+        background-repeat:no-repeat;
+        /* filter: invert(1); */
+        z-index: 11;
+        
+    }
+    .toggle.active{
+        position:fixed;
+        right: 20px;
+        background:url(/images/close_111152.png);
+        background-size: 25px;
+        background-position:center;
+        background-repeat:no-repeat;
+    }
+    header ul.navigation.active{
+        position:fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        background:#fff;
+        z-index: 10;
+    }
+    section{ 
+        padding: 20px 20px 120px;
+    }
+    .content {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .content .textBox h2 {
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+    .content .textBox{
+        max-width:100%;
+    }
+    .content .imgBox{
+        max-width:100%;
+        justify-self: center;
+    }
+    .content .imgBox img{
+        max-width: 700px;
+    }
+    header ul li a {
+        font-size: 1.5em;
+        margin: 5px 0;
+        
+    }
+    .product-card {
+        height: 60%;
+        width: 85%;
+    }
+}
