@@ -200,7 +200,7 @@ header ul li a {
         width:30px;
         height: 30px;
         cursor: pointer;
-        background:url(images/Hamburger_icon.svg);
+        background:url('../images/Hamburger_icon.svg');
         background-size: 30px;
         background-position:center;
         background-repeat:no-repeat;
@@ -211,7 +211,7 @@ header ul li a {
     .toggle.active{
         position:fixed;
         right: 20px;
-        background:url(images/close_111152.png);
+        background:url('../images/close_111152.png');
         background-size: 25px;
         background-position:center;
         background-repeat:no-repeat;
